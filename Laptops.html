@@ -4,112 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptops</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
-    <style>
-       img:hover {
-            transform: scale(1.2);
-            transition: 1.5s;
-        }
+    <title>CM-Tech | Laptops</title>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <style>
         body {
             background-image: url('images/bg6.png');
             background-size: cover;
-            background-repeat: no-repeat;
             background-position: center;
-            height: 100%;
-            margin: md-5;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: 0.4s ease;
         }
     </style>
 </head>
 
 <body>
-    <hr>
-    <!-- section 1 -->
-    <section class="row">
-        <div class="col-md-12">
-            <!-- nav tag-put all the content of the nav bar -->
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <a href="laptops.html" class="navbar-brand"><b>CM-Tech</b></a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- below is the div that curries all the nav bar links -->
-                <div class="collapse navbar-collapse" id="navbarcollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <a href="laptops.html" class="nav-link active">laptops</a>
-                        <a href="mobile_phones.html" class="nav-link">Mobile_Phones</a>
+
+    <div class="container-fluid">
+        <!-- NAVBAR -->
+        <section class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md navbar-light bg-light shadow mt-3">
+                    <a href="index.html" class="navbar-brand"><b>CM-Tech</b></a>
+
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="laptops.html" class="nav-link active">Laptops</a>
+                            <a href="aboutus.html" class="nav-link">About Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+            <!-- carousel -->
+    <section class="row text-center bg-secondary">
+        <div class="col-md-12"> <!-- major div with the coursel images -->
+            <div class="carousel slide" data-bs-ride="carousel" id="mycarousel"> <!-- wrapper starts here -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img src="images/slide2.png" alt="" class="d-block w-100"
+                            height="300" width="100%"> </div>
+                    <div class="carousel-item"> <img src="images/slide1.jpeg" alt="" class="d-block w-100" height="300"
+                            width="100%"> </div>
+                    <div class="carousel-item"> <img src="images/ChatGPT Image Jan 30, 2026, 03_30_19 PM.png" alt=""
+                            class="d-block w-100" height="300" width="100%"> </div>
+                </div> <!-- wrapper ends here --> <!-- controler starts here --> <a href="#mycarousel"
+                    class="carousel-control-prev" data-bs-slide="prev"> <span
+                        class="carousel-control-prev-icon bg-success"></span> </a> <!-- second comtroller --> <a
+                    href="#mycarousel" class="carousel-control-next" data-bs-slide="next"> <span
+                        class="carousel-control-next-icon bg-success"></span> </a>
+            </div>
+        </div>
+    </section>
+    <br>
+        <!-- LAPTOP CARDS -->
+        <section class="row text-center">
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h6>ZPl Gaming Laptop</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/laptop2.jpeg" alt="" height="300" width="100%">
+                        <p>This laptop comes with multiple gaming options.</p>
+                    </div>
+                    <div class="card-footer">
+                        <b class="text-warning">KSH 50,000</b><br>
+                        <span class="badge bg-danger">10% OFF</span>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </section>
-    <hr>
-    <!-- section 6 -->
-    <section class="row text-center">
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-header">
-                    <h6> ZPlGaming_Laptop</h6>
-                </div>
-                <div class="card-body">
-                    <img src="images/laptop2.jpeg" alt="" height="300" width="100%">
-                    <p>this laptop comes with multiple gaming options that favour your gaming time</p>
-                </div>
-                <div class="card-footer">
-                    <b class="text-warning">KSH50000</b><br>
-                    <span class="badge bg-danger">10%OFF</span>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h6>MacBook Laptop</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/laptop3.jpeg" alt="" height="300" width="100%">
+                        <p>Stand out with this powerful MacBook laptop.</p>
+                    </div>
+                    <div class="card-footer">
+                        <b class="text-warning">KSH 55,000</b><br>
+                        <span class="badge bg-danger">15% OFF</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-header">
-                    <h6>Macbook_laptop</h6>
-                </div>
-                <div class="card-body">
-                    <img src="images/laptop3.jpeg" alt="" height="300px" width="100%">
-                    <p>You want to standout come on and purchace that macbook that favour you</p>
-                </div>
-                <div class="card-footer">
-                    <b class="text-warning">KSH55000</b><br>
-                    <span class="badge bg-danger">15%OFF</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-header">
-                    <h6>BV_Laptop</h6>
-                </div>
-                <div class="card-body">
-                    <img src="images/laptop4.jpeg" alt="" width="100%" height="300">
-                    <p>This laptop comes with gaming earphones that will make sound look real</p>
-                </div>
-                <div class="card-footer">
-                    <b class="text-warning">KSH45000</b><br>
-                    <span class="badge bg-danger">10%OFF</span>
+
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h6>BV Laptop</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/laptop4.jpeg" alt="" height="300" width="100%">
+                        <p>Comes with gaming earphones for realistic sound.</p>
+                    </div>
+                    <div class="card-footer">
+                        <b class="text-warning">KSH 45,000</b><br>
+                        <span class="badge bg-danger">10% OFF</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card shadow">
-                <div class="card-header">
-                    <h6>Full_Gaming_set</h6>
-                </div>
-                <div class="card-body">
-                    <img src="images/laptop1_.jpeg" alt="" height="300" width="100%">
-                    <p>THis is a gamers dream package that comes fully equiped with everything</p>
-                </div>
-                <div class="card-footer">
-                    <b class="text-warning">KSH35000</b><br>
-                    <span class="badge bg-danger">10%OFF</span>
+
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h6>Full Gaming Set</h6>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/laptop1_.jpeg" alt="" height="300" width="100%">
+                        <p>A gamer’s dream package fully equipped.</p>
+                    </div>
+                    <div class="card-footer">
+                        <b class="text-warning">KSH 35,000</b><br>
+                        <span class="badge bg-danger">10% OFF</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+        </section>
+
+    </div>
     <!-- section 7 -->
     <section class="row bg-secondary">
         <h4 style="text-decoration: overline;" class="bg-light"><i>S</i>even</h4><br>
@@ -121,25 +151,24 @@
         </div>
         <div class="col-md-4">
             <h4 class="text-light">Contact us</h4>
-            <form action="text-light">
-                <input type="email" placeholder="Enter your email" class="form-control"><br>
+            <form action="text-light"> <input type="email" placeholder="Enter your email" class="form-control"><br>
                 <textarea name="" id="" cols="30" rows="5" placeholder="Leave your comment"
-                    class="form-control"></textarea><br>
-                <input type="button" value="send message" class="btn btn-outline-danger">
+                    class="form-control"></textarea><br> <input type="button" value="send message"
+                    class="btn btn-outline-danger">
             </form><br>
         </div>
         <div class="col-md-4">
-            <h4 class="text-light">Stay Connected</h4><br>
-            <a href="https://facebook.com"><img src="images/fb.png" alt=""></a>
-            <a href="https://instagram.com"><img src="images/in.png" alt=""></a>
-            <a href="https://x.com"><img src="images/x.png" alt=""></a><br><br>
-            <p class="text-dark mt-3">CM-Tech is a trustedbrand for computer equipement sales and fixing. we also
-                sell softwares onsite</p>
+            <h4 class="text-light">Stay Connected</h4><br> <a href="https/facebook.com"><img src="images/fb.png"
+                    alt=""></a> <a href="https/instagram.com"><img src="images/in.png" alt=""></a> <a
+                href="https/x.com"><img src="images/x.png" alt=""></a><br><br>
+            <p class="text-dark mt-3">CM-Tech is a trustedbrand for computer equipement sales and fixing. we also sell
+                softwares onsite</p>
         </div>
     </section>
-    <footer class="text-center bg-dark text-light ">
-        <h5>Developed by SSOZI &copy; 2026. All rights reserved.</h5>
+    <footer class="text-center bg-dark text-light mt-5 p-3">
+        <h5> by SSOZI &copy; 2026 | CM-Tech All rights reserved</h5>
     </footer>
+
 </body>
 
 </html>
